@@ -4,39 +4,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boots</title>
-
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Start VWO Async SmartCode -->
-<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
-<script type='text/javascript' id='vwoCode'>
-window._vwo_code ||
-(function () {
-var w=window,
-d=document;
-var account_id=1179613,
-version=2.2,
-settings_tolerance=2000,
-hide_element='body',
-hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
-/* DO NOT EDIT BELOW THIS LINE */
-if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
-</script>
-<!-- End VWO Async SmartCode -->
+        <!-- Start VWO Async SmartCode -->
+        <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+        <script type='text/javascript' id='vwoCode'>
+        window._vwo_code ||
+        (function () {
+        var w=window,
+        d=document;
+        var account_id=1179613,
+        version=2.2,
+        settings_tolerance=2000,
+        hide_element='body',
+        hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
+        /* DO NOT EDIT BELOW THIS LINE */
+        if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+        </script>
+        <!-- End VWO Async SmartCode -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
 </head>
-<body>
+<body class="font-[arial]">
 
     <header>
-        <h1 class="red">Welcome to boots text</h1>
+        <div class="md:hidden container px-4 py-2">
+            <ul class="flex justify-between items-center">
+                <li><img class="w-[25px]" src="./images/burg-nav.png" alt="burger navigation"></li>
+                <li><img class="w-[20px]" src="./images/location-nav.png" alt="location icon"></li>
+                <li><img class="w-[65px]" src="./images/boots-logo.png" alt="Boots logo"></li>
+                <li><img class="w-[25px]" src="./images/search-icon.png" alt="search icon"></li>
+                <li><img class="w-[25px]" src="./images/basket-icon.png" alt="basket icon"></li>
+            </ul>
+        </div>
+        <div class="hidden md:flex">
+            <div class="py-[20px] pl-[40px] pr-[52px]">
+                <img class="w-[142px]" src="./images/boots-logo-lg.png" alt="Boots logo">
+            </div>
+            <div class="w-full text-[#333333] mr-2 lg:mr-8">
+                <div class="flex justify-between text-[12px] py-[5px] px-[10px] bg-[#f3f6f8]">
+                    <ul class="flex items-center">
+                        <li class="flex items-center mr-2">Ship to<img class="ml-[3px] w-[21px]" src="./images/gb-flag.png" alt="GB flag"></li>
+                        <li class="flex items-center">
+                            <div class="w-[1px] mr-2 h-[15px] bg-[#c9cece]"></div>
+                            <img class="w-[14px]" src="./images/location-nav.png" alt="location icon">
+                            <div class="ml-1 hidden lg:flex">Find a store</div>
+                            <div class="w-[1px] ml-2 h-[15px] bg-[#c9cece]"></div>
+                        </li>
+                        <li class="flex items-center">
+                            <img class="w-[15px] ml-2" src="./images/help-icon.png" alt="help icon">
+                            <div class="ml-1 hidden lg:flex">Help</div>
+                        </li>
+                    </ul>
+                    <ul class="flex items-center">
+                        <li>Log in/register</li>
+                        <div class="w-[1px] ml-2 h-[15px] bg-[#c9cece]"></div>
+                        <li class="ml-2 text-[#b8237b]">Advantage Card</li>
+                    </ul>
+                </div>
+                <div class="flex mt-4 items-center">
+                    <div class="flex w-full items-center border rounded-[3px] border-gray-300 px-1 py-1 bg-white">
+                        <input
+                        type="text"
+                        placeholder="Search products, brands and services..."
+                        class="flex-1 outline-none p-1 text-[#333333] placeholder-[#333333]"
+                        />
+                        <button class="p-1">
+                        <img src="./images/search-icon.png" alt="Search" class="w-5 h-5"/>
+                        </button>
+                    </div>
+                    <img src="./images/basket-icon.png" alt="Basket icon" class="ml-2 mr-4 w-[25px] lg:ml-12"/>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-        <p>This is a basic HTML template linked to a CSS file.</p>
+        <div class="hidden mb-4 md:flex pl-[40px]">
+            <ul class="flex gap-4 lg:gap-8 text-[17px] font-bold tracking-[0.1px] text-[#004990]">
+                <li>Shop by department</li>
+                <li>Prescriptions</li>
+                <li>Health hub</li>
+                <li>Inspire Me</li>
+                <li>Offers</li>
+                <li>No7</li>
+            </ul>
+        </div>
+        <div class="px-[2px]">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide text-[15px] p-[4px] bg-[#05054b] text-white flex items-center justify-center">
+                    <div class="flex items-center justify-center gap-4 w-full">
+                    <div class="w-[35px] h-[35px]"><img src="./images/next-day.png" alt="van icon"></div>
+                    <div class="tracking-[1px]">
+                        <div class="font-bold mb-[-5px]">Next day delivery</div>
+                        <div>View checkout for details</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide text-[15px] p-[4px] bg-[#05054b] text-white flex items-center justify-center">
+                    <div class="flex items-center justify-center gap-4 w-full">
+                    <div class="w-[35px] h-[35px]"><img src="./images/standard-day.png" alt="van icon"></div>
+                    <div class="tracking-[1px]">
+                        <div class="font-bold mb-[-5px]">Standard delivery</div>
+                        <div>FREE when you spend £25</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide text-[15px] p-[4px] bg-[#05054b] text-white flex items-center justify-center">
+                    <div class="flex items-center justify-center gap-[5px] w-full">
+                    <div class="w-[35px] h-[35px]"><img src="./images/click.png" alt="van icon"></div>
+                    <div class="tracking-[1px]">
+                        <div class="font-bold mb-[-5px]">Click & Collect</div>
+                        <div>FREE when you spend £15</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide text-[15px] p-[4px] bg-[#05054b] text-white flex items-center justify-center">
+                    <div class="flex items-center justify-center gap-4 w-full">
+                    <div class="w-[35px] h-[35px]"><img src="./images/deliver-demand.png" alt="van icon"></div>
+                    <div class="tracking-[1px]">
+                        <div class="font-bold mb-[-5px]">Delivered on demand</div>
+                        <div>Explore instant delivery</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide text-[15px] p-[4px] bg-[#05054b] text-white flex items-center justify-center">
+                    <div class="flex items-center justify-center gap-2 w-full">
+                    <div class="w-[35px] h-[35px] p-[5px]"><img src="./images/cal.png" alt="van icon"></div>
+                    <div class="tracking-[1px]">
+                        <div class="font-bold mb-[-5px]">Healthcare services</div>
+                        <div>Book & manage in one place</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-hero mt-1 py-8 lg:py-12 h-full bg-[url('./images/sale-bg.png')] bg-cover bg-center bg-no-repeat text-white">
+            <h1 class="hero-heading text-center tracking-[1px] mx-auto mb-8 text-[20px] leading-[28px] lg:text-[30px] max-w-[80%]">
+                <span class="font-bold">The Big Boots Sale has landed</span> across 1,000s of favourites
+            </h1>
+            <p></p>
+            <div class="px-2">
+                <div class="swiper hero-slider flex">
+                    
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-white border border-white rounded-tr-[1rem]
+                            ">
+                                <div class="relative rounded-tr-[1rem]
+                                ">
+                                    <img class="w-full h-[195px] object-cover rounded-tr-[1rem]" src="./images/p-beauty.png" alt="premium beauty">
+                                    <div class="text-[9px] lg:text-[15px] text-[#CC0033] absolute top-0 bg-white p-1 right-0 rounded-tr-[1rem] lg:p-4 lg:rounded-bl-[1rem]
+                                    ">Save up to 20%</div>
+                                </div>
+                                <div class="text-center border py-4 px-2 flex items-center justify-center flex-col">
+                                    <h3 class="text-[#CC0033] text-[18px] mt-2">Premium beauty & No7</h3>
+                                    <p class="text-[16px] text-black font-bold my-2 max-w-[80%]">Save up to 20% on selected premium beauty & No7 treats you love</p>
+                                    <button class="bg-[#CC0033] text-[14px] py-[9px] px-[20px] rounded-[3px] tracking-[1px] font-bold w-full uppercase">Shop now</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white border border-white rounded-tr-[1rem]
+                            ">
+                                <div class="relative rounded-tr-[1rem]
+                                ">
+                                    <img class="w-full h-[195px] object-cover rounded-tr-[1rem]" src="./images/p-beauty.png" alt="premium beauty">
+                                    <div class="text-[9px] lg:text-[15px] text-[#CC0033] absolute top-0 bg-white p-1 right-0 rounded-tr-[1rem] lg:p-4 lg:rounded-bl-[1rem]
+                                    ">Save up to 20%</div>
+                                </div>
+                                <div class="text-center border py-4 px-2 flex items-center justify-center flex-col">
+                                    <h3 class="text-[#CC0033] text-[18px] mt-2">Premium beauty & No7</h3>
+                                    <p class="text-[16px] text-black font-bold my-2 max-w-[80%]">Save up to 20% on selected premium beauty & No7 treats you love</p>
+                                    <button class="bg-[#CC0033] text-[14px] py-[9px] px-[20px] rounded-[3px] tracking-[1px] font-bold w-full uppercase">Shop now</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white border border-white rounded-tr-[1rem]
+                            ">
+                                <div class="relative rounded-tr-[1rem]
+                                ">
+                                    <img class="w-full h-[195px] object-cover rounded-tr-[1rem]" src="./images/p-beauty.png" alt="premium beauty">
+                                    <div class="text-[9px] lg:text-[15px] text-[#CC0033] absolute top-0 bg-white p-1 right-0 rounded-tr-[1rem] lg:p-4 lg:rounded-bl-[1rem]
+                                    ">Save up to 20%</div>
+                                </div>
+                                <div class="text-center border py-4 px-2 flex items-center justify-center flex-col">
+                                    <h3 class="text-[#CC0033] text-[18px] mt-2">Premium beauty & No7</h3>
+                                    <p class="text-[16px] text-black font-bold my-2 max-w-[80%]">Save up to 20% on selected premium beauty & No7 treats you love</p>
+                                    <button class="bg-[#CC0033] text-[14px] py-[9px] px-[20px] rounded-[3px] tracking-[1px] font-bold w-full uppercase">Shop now</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white border border-white rounded-tr-[1rem]
+                            ">
+                                <div class="relative rounded-tr-[1rem]
+                                ">
+                                    <img class="w-full h-[195px] object-cover rounded-tr-[1rem]" src="./images/p-beauty.png" alt="premium beauty">
+                                    <div class="text-[9px] lg:text-[15px] text-[#CC0033] absolute top-0 bg-white p-1 right-0 rounded-tr-[1rem] lg:p-4 lg:rounded-bl-[1rem]
+                                    ">Save up to 20%</div>
+                                </div>
+                                <div class="text-center border py-4 px-2 flex items-center justify-center flex-col">
+                                    <h3 class="text-[#CC0033] text-[18px] mt-2">Premium beauty & No7</h3>
+                                    <p class="text-[16px] text-black font-bold my-2 max-w-[80%]">Save up to 20% on selected premium beauty & No7 treats you love</p>
+                                    <button class="bg-[#CC0033] text-[14px] py-[9px] px-[20px] rounded-[3px] tracking-[1px] font-bold w-full uppercase">Shop now</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white border border-white rounded-tr-[1rem]
+                            ">
+                                <div class="relative rounded-tr-[1rem]
+                                ">
+                                    <img class="w-full h-[195px] object-cover rounded-tr-[1rem]" src="./images/p-beauty.png" alt="premium beauty">
+                                    <div class="text-[9px] lg:text-[15px] text-[#CC0033] absolute top-0 bg-white p-1 right-0 rounded-tr-[1rem] lg:p-4 lg:rounded-bl-[1rem]
+                                    ">Save up to 20%</div>
+                                </div>
+                                <div class="text-center border py-4 px-2 flex items-center justify-center flex-col">
+                                    <h3 class="text-[#CC0033] text-[18px] mt-2">Premium beauty & No7</h3>
+                                    <p class="text-[16px] text-black font-bold my-2 max-w-[80%]">Save up to 20% on selected premium beauty & No7 treats you love</p>
+                                    <button class="bg-[#CC0033] text-[14px] py-[9px] px-[20px] rounded-[3px] tracking-[1px] font-bold w-full uppercase">Shop now</button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button>Shop All sale</button>
+                <button>Shop clearance</button>
+            </div>
+        </div>
+
     </main>
 
-    <footer>
-        <p>&copy; 2025</p>
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        
+        const swiper = new Swiper('.swiper-container', {
+          autoplay: {
+            delay: 3000, // 0.5s
+            disableOnInteraction: false,
+          },
+          slidesPerView: 1, // mobile default
+          spaceBetween: 4,
+          breakpoints: {
+            640: { // tablet
+              slidesPerView: 2,
+            },  // laptop lg
+            1024: {
+                slidesPerView: 3
+            },
+            1440: { // desktop
+              slidesPerView: 5,
+              autoplay: false,
+              loop: false,
+            }
+          },
+          grabCursor: true,   
+          speed: 800,   
+          loop: false,
+        });
+
+
+        const swiperHero = new Swiper('.hero-slider', {
+          slidesPerView: 2, // mobile default
+          spaceBetween: 8,
+          breakpoints: {
+            640: { // tablet
+              slidesPerView: 2,
+            },  // laptop lg
+            1024: {
+                slidesPerView: 3
+            },
+            1440: { // desktop
+              slidesPerView: 5,
+              autoplay: false,
+              loop: false,
+            }
+          },
+          grabCursor: true,   
+          speed: 800,   
+          loop: false,
+        });
+      </script>
+
 
 </body>
 </html>
